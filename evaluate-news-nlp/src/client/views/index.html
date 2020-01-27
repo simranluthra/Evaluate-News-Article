@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <header align="center">
+            <h1 align="center">NEWS ARTICLE PROJECT</h1>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <label for="name">Your Name:</label>
+                    <br>
+                    <input id="name" type="text" name="input" value="" placeholder="Enter your name here">
+                    <br>
+                    <br>
+                    <label for="statement">
+                        Type in a statement to get it checked through Aylien NLP.
+                    </label>
+                    <br>
+                    <input required id="statement" type="text" placeholder="Example: John is a very good football player."/>
+                    <br>
+                    <input type="submit" name="" value="submit">
+                </form>
+            <section>
+
+            <section id="results">
+                <strong>Form Results:</strong>
+                <h2 id="username"></h2>
+                <p id="polarity"></p>
+                <p id="polarity_confidence"></p>
+                <p id="subjectivity"></p>
+                <p id="subjectivity_confidence"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p align="center">Simran Luthra</p>
+        </footer>
+        <script>
+            if ("serviceWorker" in navigator) {
+              window.addEventListener("load", () =>
+                navigator.serviceWorker.register("/service-worker.js")
+              );
+            }
+          </script>
+    </body>
+</html>

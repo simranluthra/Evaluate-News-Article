@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: lightgrey;
+}
+
+header {
+    background: cadetblue;
+}
+
+main {
+    margin: 0 auto;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+footer {
+    background: cadetblue;
+}
+
+#results{
+    width: 100%;
+}
